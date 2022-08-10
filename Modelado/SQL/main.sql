@@ -276,7 +276,7 @@ CREATE TABLE PILOTO
 	Nombre               char(30)  NULL ,
 	Apellido             char(30)  NULL ,
 	Licencia             char(30)  NULL ,
-	Vivienda             char(30)  NULL ,
+	Vivienda             varchar(120)  NULL ,
 	Nacimiento           datetime  NULL 
 )
 go
