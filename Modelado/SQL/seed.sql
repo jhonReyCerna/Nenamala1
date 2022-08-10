@@ -69,10 +69,10 @@ GO
 
 -- Servicio
 
-INSERT INTO SERVICIO (IdServico, Descripcion, TipoServicio, PrecioUnitario)
+INSERT INTO SERVICIO (Descripcion, TipoServicio, PrecioUnitario)
 VALUES
-	(1,'Servicio de Buscama Premiun', 'BUSCAMA', 40.2),
-	(2,'Servicio Normal', 'NORMAL', 20.1)
+	('Servicio de Buscama Premiun', 'BUSCAMA', 40.2),
+	('Servicio Normal', 'NORMAL', 20.1)
 
 GO
 
