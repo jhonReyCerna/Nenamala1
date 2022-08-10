@@ -79,5 +79,3 @@ GO
 -- Users
 Insert INTO USERS VALUES ('avefenix','123')
 
-
-
