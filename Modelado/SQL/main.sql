@@ -361,7 +361,7 @@ go
 CREATE TABLE SERVICIO
 ( 
 	Descripcion          char(30)  NULL ,
-	IdServico            int  NOT NULL ,
+	IdServico            int IDENTITY(1,1)  NOT NULL ,
 	TipoServicio         char(30)  NULL ,
 	PrecioUnitario       float  NULL 
 )
