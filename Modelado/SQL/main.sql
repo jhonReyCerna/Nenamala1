@@ -87,12 +87,12 @@ go
 
 CREATE TABLE BUS
 ( 
-	IdBus                int  NOT NULL ,
+	IdBus                int IDENTITY(1,1) NOT NULL ,
 	DiaAdquisicion       datetime  NULL ,
 	NroAsientos          int  NULL ,
 	Costo                float  NULL ,
 	Matricula            char(30)  NULL ,
-	Estado               char(30)  NULL ,
+	Estado               tinyint  NULL ,
 	Infracciones         int  NULL 
 )
 go
@@ -616,5 +616,11 @@ ALTER TABLE VIAJE
 	ADD CONSTRAINT R_55 FOREIGN KEY (IdConductor) REFERENCES PILOTO(IdConductor)
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION
+go
+
+CREATE TABLE USERS( 
+	usuario          varchar(30)  NULL ,
+	contrasenia      varchar(30)  NOT NULL
+)
 go
 
